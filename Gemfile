@@ -1,2 +1,6 @@
 source "https://rubygems.org"
-gemspec
+
+group :jekyll_plugins do
+  gem "github-pages", "~> #{ENV['PAGES_GEM_VERSION']}", require: false
+  gem "jekyll-include-cache"
+end
